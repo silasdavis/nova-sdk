@@ -1,0 +1,65 @@
+site_name: nova-sdk
+repo_url: https://github.com/NovaSubDAO/nova-sdk
+site_url: https://novasubdao.github.io/nova-sdk
+site_description: Documentation of Nova SDKs.
+site_author: Nova subDAO
+edit_uri: edit/main/../docs/
+repo_name: NovaSubDAO/nova-sdk
+copyright: Maintained by <a href="https://github.com/NovaSubDAO">Nova subDAO</a>.
+
+nav:
+  - Intro: index.md
+  - What is sDAI?: what_is_sdai.md
+  - Bridging the gap: bridging_sdai.md
+  - SDK documentation: sdk_documentation.md
+plugins:
+  - search
+  # - mkdocstrings:
+  #     handlers:
+  #       python:
+  #         setup_commands:
+  #           - import sys
+  #           - sys.path.append('../')
+theme:
+  name: material
+  feature:
+    tabs: true
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/NovaSubDAO/nova-sdk
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/nova-sdk
+
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - footnotes
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  # - pymdownx.superfences:
+  #     custom_fences:
+  #       - name: mermaid
+  #         class: mermaid
+  #         format: !!python/name:pymdownx.superfences.fence_code_format
